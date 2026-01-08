@@ -1,0 +1,197 @@
+/* Twitter Markdown Viewer Styles */
+
+.twitter-md-rendered {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.3;
+  word-wrap: break-word;
+}
+
+/* Reset all margins */
+.twitter-md-rendered > * {
+  margin: 0;
+}
+
+/* Code blocks */
+.twitter-md-rendered pre {
+  background-color: rgb(39, 44, 48);
+  border-radius: 8px;
+  padding: 8px 10px;
+  overflow-x: auto;
+  margin: 4px 0;
+}
+
+.twitter-md-rendered pre code {
+  background: none;
+  padding: 0;
+  font-size: 13px;
+  color: #e6edf3;
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  line-height: 1.3;
+}
+
+/* Inline code */
+.twitter-md-rendered code {
+  background-color: rgba(110, 118, 129, 0.4);
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-size: 0.9em;
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+}
+
+/* Bold */
+.twitter-md-rendered strong {
+  font-weight: 700;
+}
+
+/* Italic */
+.twitter-md-rendered em {
+  font-style: italic;
+}
+
+/* Strikethrough */
+.twitter-md-rendered del {
+  text-decoration: line-through;
+}
+
+/* Headers */
+.twitter-md-rendered h1,
+.twitter-md-rendered h2,
+.twitter-md-rendered h3,
+.twitter-md-rendered h4,
+.twitter-md-rendered h5,
+.twitter-md-rendered h6 {
+  margin: 4px 0 0 0;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.twitter-md-rendered h1 { font-size: 1.2em; }
+.twitter-md-rendered h2 { font-size: 1.15em; }
+.twitter-md-rendered h3 { font-size: 1.1em; }
+.twitter-md-rendered h4 { font-size: 1.05em; }
+.twitter-md-rendered h5 { font-size: 1em; }
+.twitter-md-rendered h6 { font-size: 0.95em; }
+
+/* Lists - ultra compact */
+.twitter-md-rendered ul {
+  margin: 2px 0;
+  padding-left: 20px;
+  list-style-type: disc !important;
+}
+
+.twitter-md-rendered ol {
+  margin: 2px 0;
+  padding-left: 20px;
+  list-style-type: decimal !important;
+}
+
+.twitter-md-rendered li {
+  margin: 0;
+  padding: 0;
+  line-height: 1.3;
+  display: list-item !important;
+  list-style-position: outside;
+}
+
+.twitter-md-rendered li > p {
+  margin: 0;
+  display: inline;
+}
+
+.twitter-md-rendered li > ul,
+.twitter-md-rendered li > ol {
+  margin: 0;
+}
+
+/* Blockquotes - ultra compact */
+.twitter-md-rendered blockquote {
+  border-left: 2px solid rgb(83, 100, 113);
+  margin: 2px 0;
+  padding: 0 0 0 8px;
+  color: rgb(139, 152, 165);
+}
+
+.twitter-md-rendered blockquote p {
+  margin: 0;
+}
+
+.twitter-md-rendered blockquote ul,
+.twitter-md-rendered blockquote ol {
+  margin: 0;
+}
+
+.twitter-md-rendered blockquote blockquote {
+  margin: 0;
+}
+
+/* Links */
+.twitter-md-rendered a {
+  color: rgb(29, 155, 240);
+  text-decoration: none;
+}
+
+.twitter-md-rendered a:hover {
+  text-decoration: underline;
+}
+
+/* Horizontal rule */
+.twitter-md-rendered hr {
+  border: none;
+  border-top: 1px solid rgb(56, 68, 77);
+  margin: 6px 0;
+}
+
+/* Tables */
+.twitter-md-rendered table {
+  border-collapse: collapse;
+  margin: 4px 0;
+  width: 100%;
+  font-size: 0.95em;
+}
+
+.twitter-md-rendered th,
+.twitter-md-rendered td {
+  border: 1px solid rgb(56, 68, 77);
+  padding: 3px 6px;
+  text-align: left;
+}
+
+.twitter-md-rendered th {
+  background-color: rgba(110, 118, 129, 0.2);
+  font-weight: 600;
+}
+
+/* Paragraphs */
+.twitter-md-rendered p {
+  margin: 0;
+}
+
+.twitter-md-rendered p:empty {
+  display: none;
+}
+
+/* Toggle button */
+.twitter-md-toggle {
+  background-color: transparent;
+  border: 1px solid rgb(83, 100, 113);
+  border-radius: 4px;
+  color: rgb(139, 152, 165);
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 6px;
+  margin-left: 8px;
+  transition: all 0.2s ease;
+}
+
+.twitter-md-toggle:hover {
+  background-color: rgba(29, 155, 240, 0.1);
+  border-color: rgb(29, 155, 240);
+  color: rgb(29, 155, 240);
+}
+
+.twitter-md-toggle.active {
+  background-color: rgb(29, 155, 240);
+  border-color: rgb(29, 155, 240);
+  color: white;
+}
